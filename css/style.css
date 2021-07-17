@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 16px;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    max-width: 90%;
+    margin: 0 auto;
+    
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    flex-wrap: wrap;
+}
+nav .logo{
+    display: flex;
+    align-items: center;
+    
+}
+.search-block{
+    border: 1px solid #D9DDE7;
+    margin-left: 1rem;
+    padding: 0.5rem 0.8rem;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+}
+nav .search-block input{
+    border: none;
+    min-width: 190px;
+}
+nav .search-block input:focus{
+    outline: none;
+}
+nav ul{
+    width:100%;
+    text-align: center;
+    list-style-type: none;
+    padding: 1rem;
+    margin-top: 1rem;
+    background: whitesmoke;
+    display: none;
+}
+nav ul.show{
+    display: block;
+}
+
+nav ul li{
+    padding-bottom: 0.5rem;
+}
+nav ul li:last-child{
+    padding-bottom: 0;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #596172;
+}
+/* **********nav ends ******************/
+/* *************  main  ******************/
+.hero{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)),url('../img/mobile-img.png');
+    min-height: calc(100vh - 65px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+
+}
+.hero__text-block{
+    width: 90%;
+    margin: 0 auto;
+    color: #fff;
+}
+.house-emoji{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.hero__text-block h1{
+    font-size: 1.8rem;
+    line-height: 1.3;
+    margin-bottom: 2rem;
+    font-weight:300;
+}
+
+.hero__search-block input{
+    width: 100%;
+    background: transparent;
+    border:none;
+    color: #fff;
+
+}
+.hero__search-block input:focus{
+    outline: none;
+}
+.hero__search-block::placeholder{
+    color: #fff;
+
+}
+.hero__search-block {
+    margin-left: 0;
+    width: 70%;
+}
